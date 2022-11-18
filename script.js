@@ -1,13 +1,8 @@
-// var css = document.querySelector("#css");
-// var html = document.querySelector("#html");
-// var js = document.querySelector("#js");
 
 // nav-items
 var btnCss = document.querySelector("#btnCss");
 var btnHtml = document.querySelector("#btnHtml");
 var btnJs = document.querySelector("#btnJs");
-
-
 
 // textarea and output
 var result = document.getElementById("result").contentWindow.document;
@@ -16,10 +11,7 @@ var cssEditor = document.querySelector("#css");
 var jsEditor = document.querySelector("#js");
 
 function compile() {
-
-htmlEditor.addEventListener('input', output);
-cssEditor.addEventListener('input', output);
-jsEditor.addEventListener('input', output);
+document.querySelector("#btnRun").addEventListener("click", output);
 
 function output() {
     // result.innerHTML = editor.value;
