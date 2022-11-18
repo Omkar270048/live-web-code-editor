@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML | CSS | JavaScript Editor</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div>
+            <div class="nav">
+                <div id='btnHtml' class="nav-item" onclick="getHtmlEitor()">HTML</div>
+                <div id="btnCss" class="nav-item" onclick="getCssEitor()">CSS</div>
+                <div id='btnJs' class="nav-item" onclick="getJsEitor()">JavaScript</div>
+            </div>
+            <textarea id="html" spellcheck="false"
+            style="display: block;" placeholder="html"></textarea>
+            <textarea id="css" spellcheck="false"
+            style="display: none;" placeholder="css"></textarea>
+            <textarea id="js" spellcheck="false"
+            style="display: none;" placeholder="javascript"></textarea>
+        </div>
+        
+        <div>
+            <div class="nav" style="display: flex; justify-content: space-between;">
+                <div class="nav-item">Output</div>
+                <button id="btnDownload" class="nav-item btn">Save</button>
+                
+            </div>
+            <iframe id="result"></iframe>
+        </div>
+        
+    </div>
+
+    <script src="/script.js">
+
+    </script>
+
+</body>
+
+</html>
+
+
